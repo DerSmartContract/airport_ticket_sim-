@@ -3,18 +3,15 @@ Eine modulare, minimalistische Flughafen-Ticket-Simulation in Python. Inspiriert
 
 
 
-
-Perfekt. Hier kommt deine README.md, technisch und optisch optimiert für GitHub und alle modernen Plattformen:
-
 # Flughafen Ticket Simulation ✈️
 
 **Version:** 1.0  
-**Autor:** Dein Name (oder Teamname)  
+**Autor:**  
 **Lizenz:** MIT
 
 ---
 
-## 📝 Projektbeschreibung
+##  Projektbeschreibung
 
 **Airport Ticket Simulation** ist eine modulare und minimalistische Python-Anwendung zur Simulation eines Flughafen-Ticketbuchungssystems.  
 Inspiriert von den Grundprinzipien der Bitcoin-Blockchain vereint sie:
@@ -121,7 +118,7 @@ Bitte öffne einen Pull-Request oder erstelle ein Issue.
 
 📞 Kontakt
 
-Für Fragen oder Kooperationen: [deine.email@example.com]
+Für Fragen oder Kooperationen: david.schilling1989@gmail.com
 
 ⸻
 
