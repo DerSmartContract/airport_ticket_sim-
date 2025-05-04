@@ -1,0 +1,4 @@
+[tool.black]
+line-length = 88
+target-version = ['py312']  # Deine Python-Version (3.12.x)
+skip-string-normalization = false

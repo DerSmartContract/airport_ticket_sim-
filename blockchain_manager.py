@@ -1,6 +1,7 @@
 from blockchain import TicketBlock
 from ticket import Ticket
-from typing import List
+from flight import Flight
+from typing import List, Optional
 import json
 from datetime import datetime
 
@@ -31,11 +32,9 @@ class Blockchain:
             current = self.chain[i]
             previous = self.chain[i - 1]
 
-            # Hash des vorherigen Blocks muss stimmen
             if current.previous_hash != previous.block_hash:
                 return False
 
-            # Block-Hash muss mit den Daten übereinstimmen
             recalculated_hash = current._generate_block_hash()
             if current.block_hash != recalculated_hash:
                 return False
@@ -45,7 +44,6 @@ class Blockchain:
     def save_chain_to_file(self, filename: str = "blockchain.json") -> None:
         data = []
         for block in self.chain:
-            # Falls der Block keinen timestamp hat (alte Blöcke), setzen wir ihn jetzt
             if not hasattr(block, "timestamp") or block.timestamp is None:
                 block.timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -58,21 +56,17 @@ class Blockchain:
                 "price": block.ticket.flight.price,
                 "previous_hash": block.previous_hash,
                 "block_hash": block.block_hash,
-                "timestamp": block.timestamp  # NEU: Zeitstempel speichern
+                "timestamp": block.timestamp
             })
         with open(filename, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=4)
 
     def load_chain_from_file(self, filename: str = "blockchain.json") -> None:
-        from blockchain import TicketBlock
-        from flight import Flight
-        from ticket import Ticket
-
         try:
             with open(filename, "r", encoding="utf-8") as f:
                 data = json.load(f)
 
-            self.chain = []  # leere Chain neu aufbauen
+            self.chain = []
 
             for entry in data:
                 flight = Flight(
@@ -88,19 +82,17 @@ class Blockchain:
 
                 block = TicketBlock(ticket, entry["previous_hash"])
 
-                # Timestamp übernehmen oder generieren (Kompatibilität zu alten Dateien)
-                block.timestamp = entry.get("timestamp")
-                if block.timestamp is None:
-                    block.timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                block.timestamp = entry.get("timestamp") or datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-                # Hash neu berechnen mit geladenem oder neuem timestamp
                 recalculated_hash = block._generate_block_hash()
 
                 if recalculated_hash != entry["block_hash"]:
                     raise ValueError("Block-Hash stimmt nicht mit gespeicherten Daten überein.")
 
-                block.block_hash = entry["block_hash"]  # gespeicherten Hash übernehmen
+                block.block_hash = entry["block_hash"]
                 self.chain.append(block)
 
         except FileNotFoundError:
             print("Keine bestehende Blockchain-Datei gefunden. Neue Blockchain wird erstellt.")
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"Fehler beim Laden der Blockchain: {e}")

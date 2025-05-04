@@ -10,3 +10,4 @@
 [2025-05-04 09:29:07] Buchung: b28568b58ef849a054e89261320e650495896c13f8729deab5242aa14e6352ca | Passagier: fofo | Flug: EF789: London -> Toronto ($400.00)
 [2025-05-04 09:29:15] Buchung: f2d053076e24059e196126b2f115ae94b8833f66d157f8fffa817492f85103b9 | Passagier: üpo | Flug: EF789: London -> Toronto ($400.00)
 [2025-05-04 09:30:16] Buchung: 6a094f77051dc9320b9014faccaff8a1224c5bd9794ab6e176fdb06ea8ff3ebf | Passagier: dada | Flug: CD456: Paris -> Tokyo ($750.00)
+{"timestamp": "2025-05-04 10:14:41", "level": "INFO", "message": "Buchung: 426160b952c1dd3feb9c08ccf6e4e9b70ec57e36b1c5bd9a2eefee4ba03ab352 | Passagier: fafa | Flug: AB123: Berlin -> New York ($500.00)"}
