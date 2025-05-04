@@ -124,3 +124,11 @@ Bitte öffne einen Pull-Request oder erstelle ein Issue.
 Für Fragen oder Kooperationen: [deine.email@example.com]
 
 ⸻
+
+
+# airport_ticket_sim
+
+[![Python](https://img.shields.io/badge/Python-3.8+-blue)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Tests](https://img.shields.io/badge/Tests-10%20passed-brightgreen)]()
+[![Code Quality](https://img.shields.io/badge/Code%20Quality-Exzellenz-blueviolet)]()
