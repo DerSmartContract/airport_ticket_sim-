@@ -11,3 +11,24 @@
 [2025-05-04 09:29:15] Buchung: f2d053076e24059e196126b2f115ae94b8833f66d157f8fffa817492f85103b9 | Passagier: üpo | Flug: EF789: London -> Toronto ($400.00)
 [2025-05-04 09:30:16] Buchung: 6a094f77051dc9320b9014faccaff8a1224c5bd9794ab6e176fdb06ea8ff3ebf | Passagier: dada | Flug: CD456: Paris -> Tokyo ($750.00)
 {"timestamp": "2025-05-04 10:14:41", "level": "INFO", "message": "Buchung: 426160b952c1dd3feb9c08ccf6e4e9b70ec57e36b1c5bd9a2eefee4ba03ab352 | Passagier: fafa | Flug: AB123: Berlin -> New York ($500.00)"}
+{"timestamp": "2025-05-04 10:51:17", "level": "INFO", "message": "Buchung: 58980d8c4a616d86dbe8f84e90bc9dec06eaa93b5678cf822bfdc125f32ad93d | Passagier: dodo | Flug: CD456: Paris -> Tokyo ($750.00)"}
+{"timestamp": "2025-05-04 10:51:26", "level": "INFO", "message": "Buchung: 818b1475c79a7193d5493703868c8a370d5ffd8cf460e2e7a4aa6344410ec70d | Passagier: bibi | Flug: AB123: Berlin -> New York ($500.00)"}
+{"timestamp": "2025-05-04 10:51:36", "level": "INFO", "message": "Buchung: 2ba72fd9bb09134fcca6fa99ef254a3cf5a3003a9bf46d6b4eaa4b3aff903ae9 | Passagier: doing | Flug: EF789: London -> Toronto ($400.00)"}
+{"timestamp": "2025-05-04 11:01:57", "level": "ERROR", "message": "Fehler beim Laden der Blockchain: Block-Hash stimmt nicht mit gespeicherten Daten überein (Ticket-ID: 2da6d4350d83e16dcd8ca974f68f7e3b2b7fe908814fc44fbff3bdb3c2d16f47)."}
+{"timestamp": "2025-05-04 11:03:46", "level": "INFO", "message": "Zahlung verarbeitet: 500.00 USD"}
+{"timestamp": "2025-05-04 11:03:46", "level": "INFO", "message": "Buchung: f19b1089285568175903a31f357cf40882773261edd8c02ff639e675648fb18f | Passagier: sosos | Flug: AB123: Berlin -> New York ($500.00)"}
+{"timestamp": "2025-05-04 11:04:07", "level": "INFO", "message": "Zahlung verarbeitet: 750.00 USD"}
+{"timestamp": "2025-05-04 11:04:07", "level": "INFO", "message": "Buchung: bbf9a55a77e62061c1bb1c99fa55fdfc3f971e7195d0b979da0f90c597592e80 | Passagier: aöpa | Flug: CD456: Paris -> Tokyo ($750.00)"}
+{"timestamp": "2025-05-04 11:04:20", "level": "INFO", "message": "Zahlung verarbeitet: 500.00 USD"}
+{"timestamp": "2025-05-04 11:04:20", "level": "INFO", "message": "Buchung: 62afb96b752f120c509a449a99cd9369d7a7bb68c39afaef6c2ede1f3b3bb6db | Passagier: alskskksksksksksk | Flug: AB123: Berlin -> New York ($500.00)"}
+{"timestamp": "2025-05-04 11:15:26", "level": "INFO", "message": "Zahlung verarbeitet: 500.00 USD"}
+{"timestamp": "2025-05-04 11:15:26", "level": "INFO", "message": "Buchung: 2fa2faecae73203cb2e52f8025325d18b9def42524b8a6ef617d45b6fe335d9e | Passagier: das | Flug: AB123: Berlin -> New York ($500.00)"}
+{"timestamp": "2025-05-04 11:15:38", "level": "INFO", "message": "Zahlung verarbeitet: 400.00 USD"}
+{"timestamp": "2025-05-04 11:15:38", "level": "INFO", "message": "Buchung: cb048a141f1ac5dc16ad0c467ff421ac1eddeb2df1895f2a542381eeeb734a1c | Passagier: neineieieieieieiieiee | Flug: EF789: London -> Toronto ($400.00)"}
+{"timestamp": "2025-05-04 11:22:58", "level": "INFO", "message": "Blockchain-Datei und Hash geprüft. Integrität OK."}
+{"timestamp": "2025-05-04 11:23:03", "level": "INFO", "message": "Zahlung verarbeitet: 500.00 USD"}
+{"timestamp": "2025-05-04 11:23:03", "level": "INFO", "message": "Buchung: 4906a157786be9226b8160b55e174acfb3b50ce5e05489122363d4313cf601fd | Passagier: dada | Flug: AB123: Berlin -> New York ($500.00)"}
+{"timestamp": "2025-05-04 11:23:11", "level": "INFO", "message": "Zahlung verarbeitet: 750.00 USD"}
+{"timestamp": "2025-05-04 11:23:11", "level": "INFO", "message": "Buchung: 139ad4e0c717c40836b73d431bc9f95722f76304cccd73f40cd50d7e50b7187c | Passagier: sasa | Flug: CD456: Paris -> Tokyo ($750.00)"}
+{"timestamp": "2025-05-04 11:23:16", "level": "INFO", "message": "Blockchain-Integrität nach Buchung: OK."}
+{"timestamp": "2025-05-04 11:29:34", "level": "ERROR", "message": "Integritätsfehler beim Laden: Block-Hash stimmt nicht überein (Ticket-ID: 3a397f580b7633fcc800554e0063ae596747e765e6f696e39c2f41c16d638f5d)."}
